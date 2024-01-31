@@ -1,8 +1,54 @@
+.navbar{
+    background-color: #fff !important;
+    /* box-shadow: 1px solid rgba( 255, 255, 255, 0.18 );  */
+}
 .navbar-comp{
     color: black;
-    width: 100%;
+    width: 100vw;
     display: flex;
 }
-@media (min-width: 768px) {
-
+/* Add this CSS to position the collapse content absolutely */
+@media (max-width: 991.98px) {
+    .custom-collapse {
+      position: absolute;
+      top: 56px; /* Adjust as needed based on your design */
+      left: 0px;
+      width: 100vw;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      background-color: #fff; /* Set a background color as needed */
+    }
+  }
+  
+.nav-link{
+    padding-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+}
+.nav-link:hover{
+    background-color: #F1F3F4;
+}
+.nav-active{
+    background-color: #D2E3FC;
+}
+.nav-active:hover{
+    background-color: #D2E3FC;
+}
+.nav-btn-div{
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+}
+.nav-btn-add{
+    color: #174EA6 !important;
+}
+.nav-btn-add:hover{
+    background-color: #174EA6;
+    color: white !important;
+}
+.nav-btn{
+    background-color: #174EA6 !important;
+    border: none;
+}
+.nav-btn:hover{
+    background-color: #4285F4 !important;
 }

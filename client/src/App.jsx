@@ -5,8 +5,8 @@ import { Home, Profile, CreateCampaign, CampaignDetail } from "./pages";
 
 export default function App() {
   return (
-    <div className="d-flex flex-row flex-grow-1">
-      <SideBar />
+    <div className="">
+      {/* <SideBar /> */}
 
       <div
         style={{

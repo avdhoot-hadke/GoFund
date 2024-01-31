@@ -2,17 +2,22 @@
     height:2.5rem;
     width: 2.5rem;
     border-radius: 0.5rem;
-    margin-top: 1rem;
-    background-color: #F1F3F4;
+    /* margin-top: 1rem; */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 0.5rem;
 }
-
+.icon-comp:hover{
+    background-color: #F1F3F4;
+}
 .cursor-na{
     cursor: not-allowed;
 }
 .activeClass{
+    background-color: #D2E3FC;
+}
+.activeClass:hover{
     background-color: #D2E3FC;
 }
 .grayscale-img{
