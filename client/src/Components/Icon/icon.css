@@ -1,0 +1,20 @@
+.icon-comp{
+    height:2.5rem;
+    width: 2.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    background-color: #F1F3F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor-na{
+    cursor: not-allowed;
+}
+.activeClass{
+    background-color: #D2E3FC;
+}
+.grayscale-img{
+    filter: grayscale(100%);
+}
