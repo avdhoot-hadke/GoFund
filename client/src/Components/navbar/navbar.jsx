@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { logo, logout, profile } from "../../assets";
 import { useState } from "react";
 import { Icon } from "../";
+import { useStateContext } from "../../context";
 
 function NavLink({ name, path, isLinkActive, disabled }) {
   return (
@@ -17,13 +18,13 @@ function NavLink({ name, path, isLinkActive, disabled }) {
 }
 
 export default function Navbar() {
-  const [address, setAddress] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
   const isLinkActive = (path) => location.pathname === path;
+  const { connect, address } = useStateContext();
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top">
       <div className="container-fluid">
         <Link to="/">
           <Icon imgUrl={logo} name={"dashboard"} />
@@ -68,17 +69,17 @@ export default function Navbar() {
               <button
                 type="button"
                 className={`btn ${
-                  address == null
+                  address == undefined
                     ? "btn-primary nav-btn"
                     : "btn-outline-primary nav-btn-add"
                 } `}
                 onClick={() => {
-                  if (address != null) {
+                  if (address != undefined) {
                     navigate("/create-campaign");
-                  } else "connect()";
+                  } else connect();
                 }}
               >
-                {address != null ? "Create a campaign" : "Connect"}
+                {address != undefined ? "Create a campaign" : "Connect"}
               </button>
             </div>
             <Link to="/profile">

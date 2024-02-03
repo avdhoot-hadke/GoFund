@@ -1,0 +1,11 @@
+.form-title{
+    text-shadow: 1px 1px 2px gray;
+}
+.cc-loader{
+    width: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}

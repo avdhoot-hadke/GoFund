@@ -1,6 +1,5 @@
 .navbar{
     background-color: #fff !important;
-    /* box-shadow: 1px solid rgba( 255, 255, 255, 0.18 );  */
 }
 .navbar-comp{
     color: black;
@@ -16,7 +15,7 @@
       width: 100vw;
       padding-left: 1rem;
       padding-right: 1rem;
-      background-color: #fff; /* Set a background color as needed */
+      background-color: #fff; 
     }
   }
   

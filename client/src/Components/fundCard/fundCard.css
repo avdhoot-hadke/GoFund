@@ -1,0 +1,72 @@
+.fundCard-div{
+    width: 18rem;
+    height: 20rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); 
+}
+.fundCard-div:hover{
+    box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.075); 
+}
+.fc-img{
+    width: 18rem;
+    height: 10rem;
+    object-fit:cover;
+    border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.fc-cont-1{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.fc-cont-1 > h3{
+    margin-left: 0.7rem;
+    font-size: 1.2rem;
+}
+.fc-cont-1 > p{
+    color: #9AA0A6;
+    font-size: 0.75rem;
+    margin-left: 0.75rem;
+}
+.fc-icon{
+    width: 1rem;
+    height: 1rem;
+    object-fit: contain;
+}
+.fc-cont-2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.fc-goalDead{
+    display: flex;
+    flex-direction: column;
+}
+.fc-goalDead > p{
+    color: #9AA0A6;
+    font-size: 0.75rem;
+}
+.fc-own{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.fc-own > img{
+    width: 1.2rem;
+}
+.fc-own-p {
+    color: #9AA0A6;
+    font-size: 0.75rem;
+}
+.fc-span{
+    color: #008cb4;
+}
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
