@@ -1,0 +1,108 @@
+.progress-bar{
+    background-color: #008cb4 !important;
+}
+.cd-title{
+    text-align: center;
+    text-shadow: 1px 1px 2px gray;
+    padding: 1rem 0;
+}
+.cd-img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.cd-sideBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+@media (max-width : 991px){
+    .cd-sideBox{
+        flex-direction: row;
+        padding: 1rem 0;
+        align-items: end;
+    }
+    .cd-img-sideBox{
+        max-width: 30%;
+    }
+}
+.cd-img-sideBox{
+    background-color: #F1F3F4;
+    margin: 3px;
+    width: 50%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.175); 
+}
+.cd-img-sideBox:hover{
+    box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.175); 
+
+}
+.cd-img-sideBox >p{
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+.cd-img-sideBoxIn{
+    background-color: #9AA0A6;
+    border-radius:0 0 0.5rem 0.5rem;
+}
+.cd-img-sideBoxIn > p{
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+.display-loader-div{
+    position: absolute;
+    top:0;
+    left: 0;
+
+    z-index: 9;
+    width: 100vw;
+    height: 140%;
+    backdrop-filter: blur(5px) brightness(0.95);
+}
+.display-loader{
+    width: 10rem;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+.cd-cont-div{
+    padding-top: 2rem;
+}
+.creator-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0.75rem;
+}
+.desc-div{
+    color: #9AA0A6;
+    padding-top: 0.75rem;
+}
+.creator-div > p{
+    margin: 0;
+    padding-left: 0.5rem ;
+    color: #008cb4;
+}
+.desc-div > p{
+    margin: 0;
+}
+.fund-div{
+    border-radius: 0.5rem;
+    width: 85%;
+}
+.donate-btn{
+    background-color: #174EA6;
+    border: none;
+}
+.donate-btn:hover{
+    background-color: #4285F4;
+}

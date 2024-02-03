@@ -1,6 +1,6 @@
 .display-camp-title{
     font-size: 1.2rem;
-    text-shadow: 1px 1px 10px gray;
+    text-shadow: 1px 1px 3px gray;
     padding: 1rem 0 0 2rem;
 }
 .display-camp-div{
@@ -9,15 +9,16 @@
     flex-wrap: wrap;
     margin-top: 1.5rem;
     gap: 1.5rem;
-    justify-content:center;
+    justify-content:start;
 }
 
-@media (min-width: 944px) {
+@media (max-width: 944px) {
     .display-camp-div {
-        justify-content:start;
+        justify-content:center;
+        padding-left: 0rem;
     }
   }
-  
+
 .display-loader{
     width: 8rem;
     position: absolute;

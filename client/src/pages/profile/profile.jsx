@@ -23,7 +23,7 @@ export default function Profile() {
   return (
     <div className="profile-page">
       <DisplayCampaign
-        title="Campaigns 🌏"
+        title="Your Campaigns 💸"
         isLoading={isLoading}
         campaigns={campaigns}
       />

@@ -10,7 +10,7 @@ export default function DisplayCampaign({
 }) {
   const navigate = useNavigate();
   const handleNavigate = (campaign) => {
-    navigate(`/campaign-details/${campaign.title}, {state : campaign}`);
+    navigate(`/campaign-details/${campaign.title}`, { state: campaign });
   };
 
   return (
@@ -21,7 +21,7 @@ export default function DisplayCampaign({
           <img src={loader} alt="loader" className="display-loader" />
         )}
         {!isLoading && campaigns.length === 0 && (
-          <p className="dc-p"> No Campaigns are created</p>
+          <p className="dc-p p-0"> No Campaigns are created</p>
         )}
         {!isLoading &&
           campaigns.length > 0 &&

@@ -51,7 +51,7 @@ export default function Navbar() {
               path="/create-campaign"
               isLinkActive={isLinkActive}
             />
-            <NavLink
+            {/* <NavLink
               name="Payment"
               path="/payment"
               disabled={true}
@@ -62,7 +62,7 @@ export default function Navbar() {
               path="/withdraw"
               disabled={true}
               isLinkActive={isLinkActive}
-            />
+            /> */}
           </div>
           <div className="navbar-nav ms-auto">
             <div className="py-0 my-0 nav-btn-div">

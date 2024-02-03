@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className="home-page">
       <DisplayCampaign
-        title="Campaigns 🌏"
+        title="Campaigns 🌐"
         isLoading={isLoading}
         campaigns={campaigns}
       />
