@@ -1,0 +1,50 @@
+.landing{
+    background-color: white;
+}
+.banner-heading-div{
+    position: absolute; 
+    top: 25rem;
+    left: 12rem;
+    padding-bottom: 5rem;
+}
+.dancing-script-Heading {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 5rem;
+    color: rgb(22, 117, 120)
+  }
+
+  .info-sec{
+    background-color: white;
+    display: flex;
+    padding-bottom: 5rem;
+  }
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.if1-bg{
+    /* background-color: rgb(117, 88, 117); */
+
+}
+.second-img-div{
+    width: 500px;
+    text-align: center;
+}
+.info-text {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  color:darkslategray;
+}
+
+
+  

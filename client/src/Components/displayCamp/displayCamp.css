@@ -10,6 +10,7 @@
     margin-top: 1.5rem;
     gap: 1.5rem;
     justify-content:start;
+    height: calc(100vh - 250px);
 }
 
 @media (max-width: 944px) {
@@ -21,7 +22,7 @@
 
 .display-loader{
     width: 8rem;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

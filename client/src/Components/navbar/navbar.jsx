@@ -48,7 +48,7 @@ export default function Navbar() {
             <NavLink name="Home" path="/" isLinkActive={isLinkActive} />
             <NavLink
               name="Campaigns"
-              path="/create-campaign"
+              path="/campaign"
               isLinkActive={isLinkActive}
             />
             {/* <NavLink

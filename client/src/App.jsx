@@ -1,13 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-
 import { SideBar, Navbar } from "./Components";
 import { Home, Profile, CreateCampaign, CampaignDetail } from "./pages";
+import Landing from "./pages/Landing/landing";
+import Footer from "./Components/Footer/footer";
 
 export default function App() {
   return (
-    <div className="">
-      {/* <SideBar /> */}
-
+    <div>
       <div
         style={{
           display: "flex",
@@ -21,11 +20,14 @@ export default function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/campaign" element={<Home />} />
+          <Route path="/" element={<Landing />} />
           <Route path="/create-campaign" element={<CreateCampaign />} />
           <Route path="/campaign-details/:id" element={<CampaignDetail />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
+
+        <Footer />
       </div>
     </div>
   );
